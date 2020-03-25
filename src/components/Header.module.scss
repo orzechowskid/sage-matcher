@@ -1,0 +1,45 @@
+@import '../mediaQueries.scss';
+
+.banner {
+    left: -19px;
+    position: relative;
+    max-width: 100%;
+
+    @include on-medium-screens-and-up {
+        max-width: 490px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+
+    @include on-medium-screens-and-up {
+        flex-direction: row;
+    }
+
+    .name {
+        align-self: center;
+        color: #f37a31;
+        flex-grow: 1;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.header {
+    background-color: white;
+}
+
+.login {
+    display: none;
+
+    @include on-medium-screens-and-up {
+        display: block;
+    }
+}

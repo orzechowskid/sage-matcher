@@ -1,0 +1,19 @@
+@keyframes busy-animation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+.busy {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: #a0a0a0;
+    border-radius: 100%;
+    animation: busy-animation 1.2s infinite ease-in-out;
+}

@@ -1,0 +1,26 @@
+/* base rules apply to screens under 400px (iphone 5); @include this mixins to style
+ * content for increasingly larger screen sizes */
+
+@mixin on-tiny-screens-and-up {
+    @media (min-width: 400px) {
+        @content;
+    }
+}
+
+@mixin on-small-screens-and-up {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin on-medium-screens-and-up {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin on-large-screens-and-up {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
